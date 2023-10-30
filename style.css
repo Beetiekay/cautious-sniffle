@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'poppins' sans-serif;
+}
+.section{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background: #e3f2fd;
+}
+.audio h2{
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 500;
+    color: #fffafa;
+    background: #4070f4;
+    padding: 12px 20px;
+    margin: 5px 500px;
+    text-align: center;
+}
+.audio p{
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    text-align: center;
+}
+.audio audio{
+    position: absolute;
+    left: 39%;
+    top: 1%;
+    height: 7rem;
+    width: 25rem;
+    padding: 12px 25px;
+    margin-top: 2rem;
+}
+button{
+   font-size: 30px;
+   font-weight: 500;
+   color: #e3f2fd;
+   padding: 14px 22px;
+   border: none;
+   background: #4070f4;
+   border-radius: 6px;
+   box-shadow: 0 5px 10px rgb(0, 0, 0, 0.1);
+   cursor: pointer;
+}
+button:hover{
+    background: #265df2;
+}
+.submit-btn{
+    position: absolute;
+    left: 45%;
+    top: 30%;
+    transform: translateY(-50%, -50%);
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.1)
+} 
+section.active .submit-btn{
+    display: none;
+}  
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0, 0.3);
+    opacity: 0;
+    pointer-events: none;
+}
+section.active .overlay{
+    opacity: 1;
+    pointer-events: auto;
+}
+.dowload-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    width: 100%;
+    background: #fffafa;
+    padding: 100px 20px;
+    border-radius: 24px;
+    opacity: 0;
+    pointer-events: none;
+    transition: .3s ease;
+}
+section.active .dowload-box{
+    opacity: 1;
+    pointer-events: auto;
+}
+.dowload-box{
+    position: absolute;
+    left: 35%;
+    top: 20%;
+    transform: translateY(-50%, -50%);
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.1)
+}
+.dowload-box i{
+    font-size: 80px;
+    color: #265df2;
+}
+.dowload-box h2{
+    margin-top: 20px;
+    font-size: 35px;
+    font-weight: 500;
+    color: #333;
+}
+.dowload-box h3{
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+    text-align: center;
+}
+.dowload-box .buttons{
+    margin-top: 30px;
+}
+.dowload-box button{
+    font-size: 18px;
+    padding: 15px 10px;
+    margin: 0 20px;
+}
